@@ -1,0 +1,329 @@
+:root {
+  --team-forest: #19432f;
+  --team-forest-dark: #123323;
+  --team-forest-soft: #eaf1e9;
+  --team-ivory: #f6f7f2;
+  --team-paper: #ffffff;
+  --team-ink: #202b24;
+  --team-muted: #69776d;
+  --team-line: #e2e8df;
+  --team-line-strong: #d2ddd0;
+  --team-sage: #f0f4ed;
+}
+
+.apps-page-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--team-ivory);
+  color: var(--team-ink);
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.apps-loading-screen {
+  display: grid;
+  place-items: center;
+  color: var(--team-forest);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.apps-container {
+  width: 100%;
+  flex: 1;
+}
+
+/* Hero Section */
+.apps-hero {
+  padding: 34px clamp(20px, 5vw, 72px) 28px;
+  background: var(--team-paper);
+  border-bottom: 1px solid var(--team-line);
+}
+
+.apps-hero-inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.pill-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px;
+  color: var(--team-forest);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.pill-live .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #3d8559;
+  box-shadow: 0 0 0 3px #e6f0e6;
+}
+
+.apps-hero h1 {
+  margin: 0 0 8px;
+  color: var(--team-ink);
+  font-family: "Manrope", "DM Sans", sans-serif;
+  font-size: clamp(27px, 3vw, 36px);
+  line-height: 1.18;
+  font-weight: 750;
+  letter-spacing: -.04em;
+}
+
+.apps-hero-sub {
+  max-width: 690px;
+  margin: 0;
+  color: var(--team-muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Content Shelf */
+.apps-content-shelf {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px clamp(20px, 5vw, 72px) 64px;
+}
+
+/* Empty Card */
+.apps-empty-card {
+  max-width: 660px;
+  margin: 56px auto;
+  padding: 46px 28px;
+  background: var(--team-paper);
+  border: 1px solid var(--team-line);
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(25, 67, 47, .035);
+}
+
+.apps-empty-card .empty-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.apps-empty-card h2 {
+  margin: 0 0 8px;
+  color: var(--team-ink);
+  font-family: "Manrope", sans-serif;
+  font-size: 21px;
+  font-weight: 750;
+}
+
+.apps-empty-card p {
+  color: var(--team-muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Application Record Card */
+.apps-list-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-record-card {
+  background: var(--team-paper);
+  border: 1px solid var(--team-line);
+  border-radius: 14px;
+  padding: 26px 28px;
+  box-shadow: 0 3px 12px rgba(25, 67, 47, .035);
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.app-record-card:hover {
+  transform: translateY(-2px);
+  border-color: #cbd8ca;
+}
+
+.app-record-card.is-completed {
+  border-color: #bcdbc2;
+  background: #fbfdfa;
+}
+
+/* Header row inside card */
+.arc-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.arc-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.company-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 27px;
+  padding: 0 10px;
+  color: var(--team-forest);
+  background: var(--team-forest-soft);
+  border: 1px solid #dce8da;
+  border-radius: 6px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.type-badge {
+  color: var(--team-muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11.5px;
+  font-weight: 750;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.status-badge.open {
+  background: #edf5ea;
+  color: #2b7550;
+}
+
+.status-badge.completed {
+  background: #dff2e3;
+  color: #17542d;
+}
+
+.arc-score-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 18px;
+  border-left: 1px solid var(--team-line);
+}
+
+.score-val {
+  color: var(--team-forest);
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.score-lbl {
+  margin-top: 4px;
+  color: var(--team-muted);
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+/* Body */
+.arc-body {
+  margin-bottom: 20px;
+}
+
+.arc-title {
+  margin: 0 0 8px;
+  color: var(--team-ink);
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 800;
+  letter-spacing: -.03em;
+}
+
+.arc-desc {
+  max-width: 960px;
+  margin: 0;
+  color: var(--team-muted);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+/* Footer row */
+.arc-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--team-line);
+}
+
+.arc-footer-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 24px;
+}
+
+.arc-role-pill {
+  color: var(--team-muted);
+  font-size: 12.5px;
+}
+
+.arc-role-pill strong {
+  color: var(--team-ink);
+  font-weight: 750;
+  margin-left: 6px;
+}
+
+.arc-skills-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skills-lbl {
+  margin-right: 4px;
+  color: var(--team-muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.skill-pill {
+  padding: 4px 9px;
+  color: #2b5638;
+  background: var(--team-sage);
+  border: 1px solid #dce8d8;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.arc-date-badge {
+  font-size: 11.5px;
+  color: var(--team-muted);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .arc-top {
+    flex-direction: column;
+  }
+  .arc-score-badge {
+    padding-left: 0;
+    border-left: none;
+    align-items: flex-start;
+  }
+  .arc-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

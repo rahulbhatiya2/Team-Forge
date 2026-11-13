@@ -1,0 +1,281 @@
+/* =========================================================
+   Post Project Requisition — Forest Green Editorial
+   ========================================================= */
+
+.post-proj-shell {
+  min-height: 100vh;
+  background: #f6f7f2;
+  color: #202b24;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.post-proj-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 38px clamp(18px, 4vw, 36px) 80px;
+}
+
+.post-header {
+  margin-bottom: 28px;
+}
+
+.ai-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #edf3e9;
+  color: #28543e;
+  border: 1px solid #d4dfcf;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.post-header h1 {
+  font-family: 'Manrope', 'DM Sans', sans-serif;
+  font-size: clamp(26px, 2.5vw, 34px);
+  font-weight: 800;
+  color: #202b24;
+  letter-spacing: -0.035em;
+  margin: 0 0 6px;
+}
+
+.post-header p {
+  color: #536157;
+  font-size: 14px;
+  margin: 0;
+  max-width: 650px;
+}
+
+.post-alert-error {
+  background: #fff5f3;
+  border: 1px solid #fde2dc;
+  color: #b84c40;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+/* ---------- Card & Form Grid ---------- */
+
+.post-card {
+  background: #ffffff;
+  border: 1px solid #e3e8df;
+  border-radius: 14px;
+  padding: clamp(24px, 3vw, 38px);
+  box-shadow: 0 6px 20px rgba(35, 57, 40, 0.03);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 36px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.field-group label {
+  font-size: 11.5px;
+  font-weight: 750;
+  color: #536157;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+  background: #fafbf9;
+  border: 1px solid #e3e8df;
+  border-radius: 8px;
+  padding: 12px 15px;
+  color: #202b24;
+  font-size: 13.5px;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.18s ease;
+}
+
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+  background: #ffffff;
+  border-color: #28543e;
+  box-shadow: 0 0 0 3px rgba(40, 84, 62, 0.09);
+}
+
+.row-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ---------- Pills Grid ---------- */
+
+.pills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.pill-btn {
+  background: #f5f7f2;
+  border: 1px solid #e3e8df;
+  color: #4b5b50;
+  padding: 7px 13px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pill-btn:hover {
+  background: #edf1e8;
+  color: #202b24;
+  border-color: #cbd8ca;
+}
+
+.pill-btn.active {
+  background: #28543e;
+  border-color: #28543e;
+  color: #ffffff;
+}
+
+/* Custom Tag Row */
+.custom-tag-row {
+  display: flex;
+  gap: 8px;
+}
+
+.custom-tag-row input {
+  flex: 1;
+  background: #fafbf9;
+  border: 1px solid #e3e8df;
+  border-radius: 8px;
+  padding: 9px 13px;
+  color: #202b24;
+  font-size: 13px;
+  outline: none;
+}
+
+.custom-tag-row input:focus {
+  border-color: #28543e;
+  background: #ffffff;
+}
+
+.btn-add-custom {
+  background: #edf3e9;
+  border: 1px solid #d4dfcf;
+  color: #28543e;
+  padding: 9px 15px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.btn-add-custom:hover {
+  background: #28543e;
+  color: #ffffff;
+  border-color: #28543e;
+}
+
+/* ---------- Live Summary Preview Box ---------- */
+
+.requisition-summary {
+  background: #f7f9f5;
+  border: 1px solid #e3e8df;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.summary-title {
+  font-size: 11px;
+  font-weight: 750;
+  text-transform: uppercase;
+  color: #68766b;
+  margin-bottom: 8px;
+  letter-spacing: 0.08em;
+}
+
+.summary-content {
+  font-size: 12px;
+  color: #202b24;
+  line-height: 1.5;
+}
+
+/* ---------- Action Bar ---------- */
+
+.form-submit-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  margin-top: 26px;
+  border-top: 1px solid #edf1e9;
+  padding-top: 24px;
+}
+
+.btn-cancel {
+  background: transparent;
+  border: 1px solid #e3e8df;
+  color: #536157;
+  padding: 11px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.btn-cancel:hover {
+  background: #f1f4ed;
+  color: #202b24;
+}
+
+.btn-post-deploy {
+  background: #28543e;
+  border: 1px solid #28543e;
+  color: #ffffff;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(40, 84, 62, 0.2);
+  transition: all 0.18s ease;
+}
+
+.btn-post-deploy:hover {
+  background: #204531;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(40, 84, 62, 0.28);
+}
+
+.btn-post-deploy:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 900px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

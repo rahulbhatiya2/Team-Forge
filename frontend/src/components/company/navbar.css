@@ -1,0 +1,375 @@
+/* =========================================================
+   Navbar — Forest Green Fixed Tone (#28543e)
+   ========================================================= */
+
+.co-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  /* Solid Forest Green — peeche ke page background se color change nahi hoga */
+  background: #28543e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 30px rgba(20, 48, 34, 0.22);
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: all 0.25s ease;
+}
+
+.co-nav-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 13px clamp(18px, 4vw, 36px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* --- Brand Logo --- */
+.co-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.brand-hex {
+  color: #e4ecd5; /* Pale Sage */
+  font-size: 22px;
+  line-height: 1;
+  display: inline-block;
+  transform: translateY(-1px);
+}
+
+.brand-title {
+  font-family: 'Manrope', 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.brand-badge {
+  font-size: 9.5px;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: rgba(228, 236, 213, 0.18);
+  color: #e4ecd5;
+  border: 1px solid rgba(228, 236, 213, 0.35);
+  padding: 2.5px 7px;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+
+/* --- Navigation Links --- */
+.co-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.co-nav-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  color: #d3dfd6;
+  font-size: 13px;
+  font-weight: 550;
+  padding: 7px 14px;
+  border-radius: 8px;
+  transition: all 0.18s ease;
+}
+
+.co-nav-item:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.co-nav-item.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.18);
+  font-weight: 700;
+}
+
+.co-badge {
+  background: #e4ecd5;
+  color: #204531;
+  font-size: 9.5px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+}
+
+/* --- Actions Right --- */
+.co-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-post-project {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #28543e;
+  text-decoration: none;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+
+.btn-post-project:hover {
+  background: #f1f6ef;
+  border-color: #f1f6ef;
+  color: #28543e;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+}
+
+.icon-notify-btn {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.18s ease;
+}
+
+.icon-notify-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.notify-dot {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 6px;
+  height: 6px;
+  background: #f6bd6a;
+  border-radius: 50%;
+  border: 1.5px solid #28543e;
+}
+
+/* --- Profile Pill --- */
+.profile-menu-container {
+  position: relative;
+}
+
+.co-profile-pill {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 4px 11px 4px 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.co-profile-pill:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.co-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  background: #193b2b;
+  object-fit: cover;
+}
+
+.co-profile-text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2px;
+}
+
+.co-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.co-tier {
+  font-size: 10px;
+  font-weight: 500;
+  color: #c9dbcd;
+  line-height: 1.2;
+}
+
+.dropdown-chevron {
+  font-size: 10px;
+  color: #c9dbcd;
+  margin-left: 2px;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* --- Profile Dropdown Card --- */
+.co-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 9px);
+  right: 0;
+  width: 220px;
+  background: #1c3d2e;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 18px 40px rgba(10, 28, 19, 0.45);
+  z-index: 1050;
+  animation: fadeInMenu 0.16s ease-out;
+}
+
+@keyframes fadeInMenu {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-user-header {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 10px;
+}
+
+.dropdown-user-header strong {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown-tier-badge {
+  font-size: 10px;
+  color: #e4ecd5;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 6px 0;
+}
+
+.dropdown-logout-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(248, 113, 113, 0.15);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  color: #fca5a5;
+  font-size: 12px;
+  font-weight: 650;
+  padding: 8px 11px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.dropdown-logout-btn:hover {
+  background: rgba(248, 113, 113, 0.25);
+  color: #ffffff;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 820px) {
+  .co-nav-menu {
+    display: none;
+  }
+  .co-name {
+    max-width: 90px;
+  }
+}
+
+/* --- Profile Pill (Updated: No avatar image, clean rounded pill) --- */
+.co-profile-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.co-profile-pill:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.co-profile-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.co-name {
+  font-size: 13px;
+  font-weight: 750;
+  color: #ffffff;
+  line-height: 1.25;
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.co-tier {
+  font-size: 10px;
+  font-weight: 600;
+  color: #d2e4d6;
+  line-height: 1.2;
+}
+
+.dropdown-chevron {
+  font-size: 11px;
+  color: #e4ecd5;
+  margin-left: 4px;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-chevron.open {
+  transform: rotate(180deg);
+}
